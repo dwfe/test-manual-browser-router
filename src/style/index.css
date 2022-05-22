@@ -1,0 +1,43 @@
+@import '~normalize.css';
+@import '~@do-while-for-each/font-jetbrains-mono';
+@import '~@do-while-for-each/font-barlow';
+@import './system.override.css';
+@import './variable.css';
+
+body {
+  font-family: var(--font-family-barlow);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--color);
+  background-color: var(--bg-color);
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr;
+}
+
+#root {
+  display: grid;
+  padding: 10px 10px;
+}
+
+
+p {
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin-top: 7px;
+  margin-bottom: 14px;
+}
+
+button:focus {
+  outline: 2px solid var(--primary-hover-color);
+  outline-offset: 1px;
+}
